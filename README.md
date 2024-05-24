@@ -27,7 +27,7 @@ means something went wrong.
 If you don't setup 'choose' with a timeout value, it will wait infinitely for the user to enter an option (unless the user presses Ctrl-C). If you do setup a timeout value
 for 'choose', you also must setup a default-value which 'choose' will choose when the timeout has reached. So it never will return '0', but instead it returns the
 value for that default value. All printable ASCII chars are available, accept for ASC(32) (space) and/or ASC(127). You could setup all chars in the range of ASC(33)..
-until ASC(126).
+until ASC(126). For now, I've coded 'choose' to only use chars in the range of [0..9][A..Z][a..z].
 
 I hope this tool will be handy for you, as it is for me.
 
